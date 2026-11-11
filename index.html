@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Project Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>AI Project Manager</h1>
+    <p>Manage your projects smarter with AI</p>
+</header>
+
+<main>
+    <section class="dashboard">
+        <div class="card">
+            <h3>Total Tasks</h3>
+            <p id="total">0</p>
+        </div>
+        <div class="card">
+            <h3>Completed</h3>
+            <p id="completed">0</p>
+        </div>
+        <div class="card">
+            <h3>Pending</h3>
+            <p id="pending">0</p>
+        </div>
+    </section>
+
+    <section class="task-section">
+        <h2>Add New Task</h2>
+        <input id="taskInput" type="text"
+               placeholder="Enter your task">
+
+        <input id="deadline" type="date">
+
+        <button onclick="addTask()">Add Task</button>
+    </section>
+
+    <section class="task-section">
+        <h2>Project Tasks</h2>
+        <div id="taskList"></div>
+    </section>
+
+    <section class="ai-section">
+        <h2>AI Task Assistant</h2>
+        <p>Get smart suggestions for your tasks.</p>
+        <button onclick="getAISuggestion()">
+            Generate AI Suggestion
+        </button>
+        <p id="suggestion">
+            Your AI suggestion will appear here.
+        </p>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
